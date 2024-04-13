@@ -3,16 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+
     <title>Entendendo o curso</title>
   </head>
   <body>
-    <h1>Primeiros Passos com HTML</h1>
+    <h1 class="titulo">Primeiros Passos com HTML</h1>
     <hr />
 
     <h2 id="indice">Índice</h2>
-    <ul>
+    <ul class="conteudo-principal">
       <li><a href="#Entendendo">Entendendo Comunicação Cliente x Server</a></li>
-      <ol>
+      <ol class="sub-conteudo">
         <li><a href="#historia">Historia da Web</a></li>
         <li><a href="#clients">O que são Clients</a></li>
         <li><a href="#server">O que são Servers</a></li>
@@ -22,7 +31,9 @@
     <br />
     <hr />
 
-    <h2 id="Entendendo">Entendendo Comunicação Cliente x Server</h2>
+    <h2 class="sub-titulo" id="Entendendo">
+      Entendendo Comunicação Cliente x Server
+    </h2>
 
     <h3 id="historia">Historia da Web</h3>
 
@@ -33,34 +44,49 @@
       válvulas eletônicas. Possuíam o uso restrito, além de serem imensos e
       consumirem muita energia.
     </p>
-    <ul>
+    <ul class="imagem-primeira-geracao">
       <li>
-        <p>
+        <p class="nome-computador">
           Harvard Mark I ou
           <abbr title="Automatic Sequence Controlled Calculator">ASCC</abbr
           >(1944)
         </p>
-        <img
-          class="geracao-imagem"
-          src="assets/img/Mark-I.png"
-          alt="Harvard Mark I" />
+        <figure>
+          <img
+            class="geracao-imagem"
+            src="assets/img/Mark-I.png"
+            alt="Harvard Mark I" />
+          <figcaption>Harvard Mark I</figcaption>
+        </figure>
       </li>
       <li>
-        <p>Colossus (1946)</p>
-        <img
-          class="geracao-imagem"
-          src="assets/img/Colossus.png"
-          alt="Colossus e duas operadoras do Serviço Naval Real Feminino, Dorothy Du Boisson (à esquerda) e Elsie Booker" />
+        <p class="nome-computador">Colossus (1946)</p>
+        <figure>
+          <img
+            class="geracao-imagem"
+            src="assets/img/Colossus.png"
+            alt="Colossus e duas operadoras do Serviço Naval Real Feminino, Dorothy Du Boisson (à esquerda) e Elsie Booker" />
+          <figcaption>
+            Colossus e duas operadoras do Serviço Naval Real Feminino, Dorothy
+            Du Boisson (à esquerda) e Elsie Booker
+          </figcaption>
+        </figure>
       </li>
       <li>
-        <p>
+        <p class="nome-computador">
           <abbr title="Electronic Numerical Integrator and Computer">ENIAC</abbr
           >(1946)
         </p>
-        <img
-          class="geracao-imagem"
-          src="assets/img/ENIAC.png"
-          alt="Os programadores do ENIAC trabalhando. À esquerda está Betty Jean Jennings e Fran Bilas está à direita." />
+        <figure>
+          <img
+            class="geracao-imagem"
+            src="assets/img/ENIAC.png"
+            alt="Os programadores do ENIAC trabalhando. À esquerda está Betty Jean Jennings e Fran Bilas está à direita." />
+          <figcaption>
+            Os programadores do ENIAC trabalhando. À esquerda está Betty Jean
+            Jennings e Fran Bilas está à direita.
+          </figcaption>
+        </figure>
       </li>
     </ul>
 
@@ -71,11 +97,13 @@
       eram maiores e mais lentas. Nesse período já começaram a se espalhar o uso
       comercial.
     </p>
-    <img
-      class="geracao-imagem"
-      src="assets/img/PDP.png"
-      alt="PDP-1, computador de segunda geração" />
-
+    <figure>
+      <img
+        class="geracao-imagem"
+        src="assets/img/PDP.png"
+        alt="PDP-1, computador de segunda geração" />
+      <figcaption>PDP-1, computador de segunda geração</figcaption>
+    </figure>
     <p class="geracao">3ª Geração</p>
     <p class="descricao">
       Os computadores desta geração funcionavam por circuitos integrados. Esses
@@ -83,11 +111,16 @@
       capacidade de processamento. Neste período que os chips foram criados e a
       utilização de computadores pessoais começou.
     </p>
-    <img
-      class="geracao-imagem"
-      src="assets/img/IBM 360.png"
-      alt="IBM 360, utilização de circuitos integrados - terceira geração de computadores" />
-
+    <figure>
+      <img
+        class="geracao-imagem"
+        src="assets/img/IBM 360.png"
+        alt="IBM 360, utilização de circuitos integrados - terceira geração de computadores" />
+      <figcaption>
+        IBM 360, utilização de circuitos integrados - terceira geração de
+        computadores
+      </figcaption>
+    </figure>
     <p class="geracao">4ª Geração</p>
     <p class="descricao">
       Com o desenvolvimento da tecnologia da informação, os computadores
@@ -96,11 +129,16 @@
       energia. Nesse período, mais precisamente a partir da década de 90, há uma
       grande expansão dos computadores pessoais.
     </p>
-    <img
-      class="geracao-imagem"
-      src="assets/img/PET-APPLE-TRS.png"
-      alt="Da esquerda para a direita: Commodore PET 2001, Apple II e TRS-80 Model I - computadores de quarta geração (1977)" />
-
+    <figure>
+      <img
+        class="geracao-imagem"
+        src="assets/img/PET-APPLE-TRS.png"
+        alt="Da esquerda para a direita: Commodore PET 2001, Apple II e TRS-80 Model I - computadores de quarta geração (1977)" />
+      <figcaption>
+        Da esquerda para a direita: Commodore PET 2001, Apple II e TRS-80 Model
+        I - computadores de quarta geração (1977)
+      </figcaption>
+    </figure>
     <p class="geracao">5ª Geração</p>
     <p class="descricao">
       A quinta geração de computadores é composta por todos os dispositivos já
@@ -116,13 +154,15 @@
       saída de dados podem ser feitas a partir do hardware, mas também a partir
       do reconhecimento de voz ou facial.
     </p>
-    <img
-      class="geracao-imagem"
-      src="assets/img/Computador-Quantico.png"
-      alt="Interior de um computador quântico" />
-
-    <h4>Internet - Como Surgiu</h4>
-    <h4>Grandes Nomes</h4>
+    <figure>
+      <img
+        class="geracao-imagem"
+        src="assets/img/Computador-Quantico.png"
+        alt="Interior de um computador quântico" />
+      <figcaption>Interior de um computador quântico</figcaption>
+    </figure>
+    <h4 class="conteudo">Internet - Como Surgiu</h4>
+    <h4 class="conteudo">Grandes Nomes</h4>
     <blockquote></blockquote>
 
     <small><a href="#indice">Voltar ao Índice</a></small>
